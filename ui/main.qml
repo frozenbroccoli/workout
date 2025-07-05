@@ -14,37 +14,56 @@ ApplicationWindow {
         Rectangle {
             id: background
             anchors.fill: parent
-            color: Colors.abyssInk
+            color: Colors.sunWheat
+        }
+
+        Rectangle {
+            id: bound
+            width: parent.width / 1.2
+            height: parent.height / 1.2
+            anchors.centerIn: parent
+            anchors.margins: 72
+            color: "transparent"
 
             Rectangle {
                 id: one
-                width: 400
-                height: 400
-                color: Colors.celestialGrape
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.right: two.left
-                anchors.margins: 16
+                width: bound.width / 2
+                height: bound.height / 2
+                color: Colors.burntSienna
+                anchors.top: bound.top
+                anchors.left: bound.left
                 radius: 12
             }
 
             Rectangle {
                 id: two
-                width: 400
-                height: 400
-                color: Colors.witchLight
-                anchors.centerIn: parent
-                anchors.margins: 16
+                width: bound.width / 2
+                height: bound.height / 2
+                color: Colors.ivoryMist
+                anchors.top: bound.top
+                anchors.left: one.right
+                anchors.right: bound.right
                 radius: 12
             }
 
             Rectangle {
                 id: three
-                width: 400
-                height: 400
-                color: Colors.amberFlare
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.left: two.right
-                anchors.margins: 16
+                width: bound.width / 2
+                height: bound.height / 2
+                color: Colors.slateNight
+                anchors.top: one.bottom
+                anchors.left: bound.left
+                radius: 12
+            }
+
+            Rectangle {
+                id: four
+                width: bound.width / 2
+                height: bound.height / 2
+                color: Colors.alpineMint
+                anchors.top: two.bottom
+                anchors.left: three.right
+                anchors.right: bound.right
                 radius: 12
             }
         }

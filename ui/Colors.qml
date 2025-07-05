@@ -11,4 +11,10 @@ QtObject {
     readonly property color celestialGrape: "#471396"
     readonly property color witchLight: "#b13bff"
     readonly property color amberFlare: "#ffcc00"
+
+    readonly property color ivoryMist: "#f4f1de"
+    readonly property color burntSienna: "#e07a5f"
+    readonly property color slateNight: "#3d405b"
+    readonly property color alpineMint: "#81b29a"
+    readonly property color sunWheat: "#f2cc8f"
 }
